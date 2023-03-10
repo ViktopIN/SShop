@@ -10,9 +10,9 @@ import SwiftUI
 struct TextFieldsStack: View {
     var spacing: CGFloat
     var body: some View {
-        var textFieldNames = [
+        let textFieldNames = [
             "First name",
-            "Second name",
+            "Last name",
             "Email"
         ]
         VStack(spacing: spacing) {

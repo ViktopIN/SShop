@@ -12,10 +12,15 @@ struct MainTextField: View {
     var placeholderText: String
     var body: some View {
         TextField(
-            placeholderText,
+            "",
             text: $inputValue
         )
         .textFieldStyle(OvalTextFieldStyle())
+        .placeholder(when: inputValue.isEmpty, alignment: .center) {
+            Text(placeholderText)
+                .foregroundColor(.textGray2)
+                .font(.montserratRegular(ofSize: 12))
+        }
     }
 }
 

@@ -12,7 +12,7 @@ struct BigButtonStyle: ButtonStyle {
         configuration.label
             .foregroundColor(.white)
             .padding()
-            .background(Color.mainBigButtonPurple)
+            .background(Color.purple1)
             .clipShape(RoundedRectangle(cornerRadius: 15))
     }
 }
