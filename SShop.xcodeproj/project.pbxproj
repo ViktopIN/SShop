@@ -34,7 +34,7 @@
 		84C7D75329BB5CBA00707B28 /* Montserrat-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraBold.ttf"; sourceTree = "<group>"; };
 		84C7D75429BB5CBA00707B28 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
 		84C7D76929BB5CE400707B28 /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
-		84C7D76D29BB60A200707B28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		84C7D76D29BB60A200707B28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84F6E21B29BB5B51000B05D7 /* SShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84F6E21E29BB5B51000B05D7 /* SShopApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SShopApp.swift; sourceTree = "<group>"; };
 		84F6E22029BB5B51000B05D7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -80,6 +80,8 @@
 		84C7D76C29BB5F0D00707B28 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				84C7D74329BB5C8600707B28 /* Fonts */,
+				84C7D76D29BB60A200707B28 /* Info.plist */,
 				84F6E22229BB5B52000B05D7 /* Assets.xcassets */,
 				84F6E22429BB5B52000B05D7 /* Preview Content */,
 			);
@@ -105,10 +107,8 @@
 		84F6E21D29BB5B51000B05D7 /* SShop */ = {
 			isa = PBXGroup;
 			children = (
-				84C7D76D29BB60A200707B28 /* Info.plist */,
 				84C7D76C29BB5F0D00707B28 /* Resources */,
 				84C7D76829BB5CD300707B28 /* Extension */,
-				84C7D74329BB5C8600707B28 /* Fonts */,
 				84F6E21E29BB5B51000B05D7 /* SShopApp.swift */,
 				84F6E22029BB5B51000B05D7 /* ContentView.swift */,
 			);
@@ -335,7 +335,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SShop/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SShop/Info.plist;
+				INFOPLIST_FILE = SShop/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -364,7 +364,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SShop/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SShop/Info.plist;
+				INFOPLIST_FILE = SShop/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
