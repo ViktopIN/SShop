@@ -11,23 +11,12 @@ struct SignInView: View {
     var body: some View {
         GeometryReader { geometry in
             VStack {
-                Text("Sign In")
-                    .font(.montserratSemiBold(ofSize: 26))
-                    .padding(.bottom, geometry.size.height / 10)
+                TitleStyleText(text: "Sign In")
+                .padding(.bottom, geometry.size.height / 10)
                 TextFieldsStack(spacing: geometry.size.height / 20)
                     .padding(.bottom, geometry.size.height / 20)
                     .coordinateSpace(name: "textFieldCoordinate")
-                Button {
-                    print("tap")
-                } label: {
-                    HStack{
-                        Spacer()
-                        Text("Sign in")
-                            .font(.montserratBold(ofSize: 15))
-                        Spacer()
-                    }
-                }
-                .buttonStyle(BigButtonStyle())
+                BigButtonView(text: "Sign in")
                 .padding(.bottom, geometry.size.height / 50)
                 LogInStack()
                     .padding(.bottom, geometry.size.height / 10)
