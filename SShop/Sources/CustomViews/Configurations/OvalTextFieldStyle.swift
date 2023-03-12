@@ -11,7 +11,7 @@ struct OvalTextFieldStyle: TextFieldStyle {
     func _body(configuration: TextField<Self._Label>) -> some View {
         configuration
             .padding(5)
-            .background(Color.textGray1)
+            .background(Color.lightGray1)
             .font(Font.montserratMedium(ofSize: 14))
             .clipShape(Capsule())
             .multilineTextAlignment(.center)

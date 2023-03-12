@@ -18,7 +18,7 @@ struct MainTextField: View {
         .textFieldStyle(OvalTextFieldStyle())
         .placeholder(when: inputValue.isEmpty, alignment: .center) {
             Text(placeholderText)
-                .foregroundColor(.textGray2)
+                .foregroundColor(.lightGray2)
                 .font(.montserratRegular(ofSize: 12))
         }
     }
