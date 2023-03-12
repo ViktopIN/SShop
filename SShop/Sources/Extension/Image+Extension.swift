@@ -26,6 +26,8 @@ extension Image {
     static let message = Image("message.icon")
     static let profile = Image("profile.icon")
     
+    static let sideMenu = Image("side.menu.icon")
+    
     //placehldr
     static let img = Image("plc.img")
     static let ppl = Image("plc.ppl")

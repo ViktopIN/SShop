@@ -8,15 +8,16 @@
 import SwiftUI
 
 struct PhotoCircleView: View {
+    var profileImage: Image
     var strokeColor: Color
     var body: some View {
-        Image.ppl
+        profileImage
             .resizable()
             .scaledToFit()
             .clipShape(Circle())
             .overlay {
                 Circle()
-                    .stroke(lineWidth: 3)
+                    .stroke(lineWidth: 1.5)
                     .foregroundColor(strokeColor)
             }
     }
@@ -24,6 +25,6 @@ struct PhotoCircleView: View {
 
 struct PhotoCircleView_Previews: PreviewProvider {
     static var previews: some View {
-        PhotoCircleView(strokeColor: .darkGray1)
+        PhotoCircleView(profileImage: .ppl, strokeColor: .darkGray1)
     }
 }
