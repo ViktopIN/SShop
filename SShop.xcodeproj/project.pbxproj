@@ -213,7 +213,6 @@
 			isa = PBXGroup;
 			children = (
 				84C7D79129BCDCFA00707B28 /* View */,
-				84C7D79F29BCF2A300707B28 /* LogInView.swift */,
 			);
 			path = LogInScene;
 			sourceTree = "<group>";
@@ -221,6 +220,7 @@
 		84C7D79129BCDCFA00707B28 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				84C7D79F29BCF2A300707B28 /* LogInView.swift */,
 				84C7D79629BCED9900707B28 /* ViewParts */,
 			);
 			path = View;
