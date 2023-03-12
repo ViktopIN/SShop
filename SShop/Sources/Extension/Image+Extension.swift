@@ -27,6 +27,7 @@ extension Image {
     static let profile = Image("profile.icon")
     
     static let sideMenu = Image("side.menu.icon")
+    static let magnifyingGlass = Image("magnifying.glass.icon")
     
     //placehldr
     static let img = Image("plc.img")

@@ -15,7 +15,7 @@ struct MainTextField: View {
             "",
             text: $inputValue
         )
-        .textFieldStyle(OvalTextFieldStyle())
+        .textFieldStyle(OvalTextFieldStyle(backgroundColor: .lightGray1))
         .placeholder(when: inputValue.isEmpty, alignment: .center) {
             Text(placeholderText)
                 .foregroundColor(.lightGray2)
