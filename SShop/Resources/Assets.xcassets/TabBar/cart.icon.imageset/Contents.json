@@ -1,17 +1,15 @@
 {
   "images" : [
     {
-      "filename" : "Арсений Попов 3.jpg",
+      "filename" : "Group 2.pdf",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Арсений Попов 4.jpg",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "Арсений Попов.jpg",
       "idiom" : "universal",
       "scale" : "3x"
     }
@@ -19,5 +17,8 @@
   "info" : {
     "author" : "xcode",
     "version" : 1
+  },
+  "properties" : {
+    "preserves-vector-representation" : true
   }
 }
