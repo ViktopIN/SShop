@@ -182,6 +182,7 @@
 		84C7D77529BB6F8500707B28 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				849F9D6629BF314F00B56161 /* ScrollsTitleView.swift */,
 				84C7D7A329BDEE0D00707B28 /* TabBarView */,
 				84C7D77729BB6F9900707B28 /* Views */,
 				84C7D77629BB6F8F00707B28 /* Configurations */,
@@ -326,7 +327,6 @@
 				84C7D7AE29BE34DB00707B28 /* Page1TitleText.swift */,
 				84C7D7B029BE36E500707B28 /* Page1TopView.swift */,
 				84C7D7B229BE44B200707B28 /* Page1MiddleView.swift */,
-				849F9D6629BF314F00B56161 /* ScrollsTitleView.swift */,
 			);
 			path = ViewParts;
 			sourceTree = "<group>";

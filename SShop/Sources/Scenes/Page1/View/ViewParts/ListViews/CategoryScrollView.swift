@@ -9,15 +9,18 @@ import SwiftUI
 
 struct CategoryScrollView: View {
     let categoryModel: [CategoryModel]
-    let row = [GridItem(.fixed(62))]
+    let row = [GridItem(.flexible())]
     var body: some View {
-        ScrollView(.horizontal, showsIndicators: false) {
-            LazyHGrid(rows: row, alignment: .center, spacing: 0) {
-                ForEach(categoryModel, id: \.self) { category in
-                    CategoryItemView(mainImage: category.image, mainText: category.name)
+        GeometryReader { geo in
+            ScrollView(.horizontal, showsIndicators: false) {
+                LazyHGrid(rows: row, alignment: .center, spacing: 7) {
+                    ForEach(categoryModel, id: \.self) { category in
+                        CategoryItemView(mainImage: category.image, mainText: category.name)
+                    }
+                    .frame(width: geo.size.width / 7)
                 }
-                .frame(width: 60)
             }
+            .frame(width: geo.size.width, height: geo.size.height)
         }
     }
 }
