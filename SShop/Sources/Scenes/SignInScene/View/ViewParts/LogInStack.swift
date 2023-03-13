@@ -11,7 +11,7 @@ struct LogInStack: View {
     var body: some View {
         HStack() {
             Text("Already have an account?")
-                .foregroundColor(.textGray3)
+                .foregroundColor(.lightGray3)
             .font(.montserratMedium(ofSize: 10))
             Button {
                 print("tap")

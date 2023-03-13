@@ -18,4 +18,16 @@ extension View {
             placeholder().opacity(shouldShow ? 1 : 0)
         }
     }
+    
+    func makeIsActiveLabel(_ value: Bool) -> some View {
+        ZStack {
+            Circle()
+                .foregroundColor(value ? .lightGray5 : .clear)
+            self
+        }
+    }
+    
+    func cornerRadius(_ radius: CGFloat, corners: UIRectCorner) -> some View {
+        clipShape( RoundedCorner(radius: radius, corners: corners) )
+    }
 }

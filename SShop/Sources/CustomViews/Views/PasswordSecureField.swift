@@ -19,7 +19,7 @@ struct PasswordSecureField: View {
                     .textFieldStyle(OvalTextFieldStyle())
                     .placeholder(when: inputValue.isEmpty, alignment: .center) {
                         Text("Password")
-                            .foregroundColor(.textGray2)
+                            .foregroundColor(.lightGray2)
                             .font(.montserratRegular(ofSize: 12))
                     }
             } else {
