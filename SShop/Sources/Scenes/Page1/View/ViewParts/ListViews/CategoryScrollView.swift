@@ -22,6 +22,7 @@ struct CategoryScrollView: View {
             }
             .frame(width: geo.size.width, height: geo.size.height)
         }
+        .frame(height: 70)
     }
 }
 

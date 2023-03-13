@@ -17,13 +17,12 @@ struct Page1MiddleView: View {
                 SearchTextFieldView(inputText: $inputText)
                     .padding(.bottom, geo.size.height / 40)
                 CategoryScrollView(categoryModel: categoryModel)
-                    .frame(height: geo.size.height / 10)
                     .padding(.bottom, geo.size.height / 30)
                 ScrollsTitleView(scrollName: "Latest")
                     .padding(.bottom, 0)
                 MainScrollView(model: latestModel)
-                    .frame(height: geo.size.height / 5.5)
             }
+            .frame(width: geo.size.width, height: geo.size.height)
         }
     }
 }

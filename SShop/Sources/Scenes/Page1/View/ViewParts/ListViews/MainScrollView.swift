@@ -31,7 +31,7 @@ struct MainScrollView: View {
                             price: model.price
                         )
                     }
-                    .frame(width: geo.size.height * 0.76)
+                    .frame(width: geo.size.height * 0.68)
                 }
             }
         }
