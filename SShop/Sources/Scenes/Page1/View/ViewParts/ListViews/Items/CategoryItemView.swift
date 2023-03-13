@@ -12,20 +12,22 @@ struct CategoryItemView: View {
     var mainText: String
     var body: some View {
         GeometryReader { geometry in
-            VStack(spacing: geometry.size.width * 0.4) {
-                ZStack {
+            VStack(alignment: .center, spacing: geometry.size.width * 0.2) {
+                ZStack(alignment: .center) {
                     Circle()
                         .foregroundColor(.lightGray5)
                     mainImage
                         .resizable()
                         .scaledToFit()
-                        .frame(width: geometry.size.width * 3/8)
+                        .frame(width: geometry.size.width / 4, height: geometry.size.width / 4)
                 }
-                .frame(width: geometry.size.width, height: geometry.size.width)
+                .frame(width: geometry.size.width * 0.6, height: geometry.size.width * 0.6)
                 Text(mainText)
                     .foregroundColor(.lightGray4)
-                    .font(.montserratRegular(ofSize: 10))
+                    .font(.montserratRegular(ofSize: 8))
+                    .frame(width: geometry.size.width)
             }
+            .frame(width: geometry.size.width, height: geometry.size.height)
         }
     }
 }

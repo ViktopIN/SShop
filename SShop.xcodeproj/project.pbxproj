@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		849F9D5E29BF201300B56161 /* CategoryScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849F9D5D29BF201300B56161 /* CategoryScrollView.swift */; };
+		849F9D6129BF211100B56161 /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849F9D6029BF211100B56161 /* CategoryModel.swift */; };
 		84C7D75C29BB5CBA00707B28 /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84C7D74A29BB5CBA00707B28 /* Montserrat-Light.ttf */; };
 		84C7D75D29BB5CBA00707B28 /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84C7D74B29BB5CBA00707B28 /* Montserrat-SemiBold.ttf */; };
 		84C7D75E29BB5CBA00707B28 /* Montserrat-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84C7D74C29BB5CBA00707B28 /* Montserrat-Thin.ttf */; };
@@ -53,6 +55,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		849F9D5D29BF201300B56161 /* CategoryScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryScrollView.swift; sourceTree = "<group>"; };
+		849F9D6029BF211100B56161 /* CategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
 		84C7D74A29BB5CBA00707B28 /* Montserrat-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.ttf"; sourceTree = "<group>"; };
 		84C7D74B29BB5CBA00707B28 /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
 		84C7D74C29BB5CBA00707B28 /* Montserrat-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Thin.ttf"; sourceTree = "<group>"; };
@@ -111,6 +115,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		849F9D5C29BF1FE000B56161 /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				84C7D7B729BE494000707B28 /* CategoryItemView.swift */,
+				84C7D7B929BE523400707B28 /* LatestItemView.swift */,
+				84C7D7BF29BE56C300707B28 /* LatestItemTextStackView.swift */,
+			);
+			path = Items;
+			sourceTree = "<group>";
+		};
+		849F9D5F29BF210500B56161 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				849F9D6029BF211100B56161 /* CategoryModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		84C7D74329BB5C8600707B28 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -276,6 +298,7 @@
 		84C7D7A829BE32E400707B28 /* Page1 */ = {
 			isa = PBXGroup;
 			children = (
+				849F9D5F29BF210500B56161 /* Model */,
 				84C7D7A929BE32EB00707B28 /* View */,
 			);
 			path = Page1;
@@ -303,9 +326,8 @@
 		84C7D7B629BE492100707B28 /* ListViews */ = {
 			isa = PBXGroup;
 			children = (
-				84C7D7B729BE494000707B28 /* CategoryItemView.swift */,
-				84C7D7B929BE523400707B28 /* LatestItemView.swift */,
-				84C7D7BF29BE56C300707B28 /* LatestItemTextStackView.swift */,
+				849F9D5C29BF1FE000B56161 /* Items */,
+				849F9D5D29BF201300B56161 /* CategoryScrollView.swift */,
 			);
 			path = ListViews;
 			sourceTree = "<group>";
@@ -436,6 +458,7 @@
 				84C7D7BC29BE54C400707B28 /* Int+Extension.swift in Sources */,
 				84C7D77029BB634500707B28 /* MainTextField.swift in Sources */,
 				84C7D79529BCED7C00707B28 /* LogInTextFieldStack.swift in Sources */,
+				849F9D5E29BF201300B56161 /* CategoryScrollView.swift in Sources */,
 				84C7D7B129BE36E500707B28 /* Page1TopView.swift in Sources */,
 				84C7D79829BCF00000707B28 /* LogInStack.swift in Sources */,
 				84C7D7AC29BE330E00707B28 /* PhotoCircleView.swift in Sources */,
@@ -445,6 +468,7 @@
 				84C7D78B29BB812300707B28 /* SingInServiceStack.swift in Sources */,
 				84C7D7A029BCF2A300707B28 /* LogInView.swift in Sources */,
 				84C7D7A229BDEB3600707B28 /* TabBarButton.swift in Sources */,
+				849F9D6129BF211100B56161 /* CategoryModel.swift in Sources */,
 				84C7D7A529BDEE2100707B28 /* TabBarView.swift in Sources */,
 				84C7D7B829BE494000707B28 /* CategoryItemView.swift in Sources */,
 				84C7D76A29BB5CE400707B28 /* Font+Extension.swift in Sources */,
