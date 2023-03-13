@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct LatestItemView: View {
+struct MainItemView: View {
     let mainImage: Image
     let category: Category
     var _category: String {
@@ -25,7 +25,7 @@ struct LatestItemView: View {
                     .resizable()
                     .clipShape(RoundedRectangle(cornerRadius: 20))
                     .frame(width: geo.size.width, height: geo.size.height)
-                LatestItemTextStackView(
+                MainItemTextStackView(
                     category: _category,
                     nameOfItem: nameOfItem,
                     price: _price
@@ -38,6 +38,6 @@ struct LatestItemView: View {
 
 struct LatestItemView_Previews: PreviewProvider {
     static var previews: some View {
-        LatestItemView(mainImage: Image.img, category: .phone, nameOfItem: "Samsung S10", price: 180000)
+        MainItemView(mainImage: Image.img, category: .phone, nameOfItem: "Samsung S10", price: 180000)
     }
 }

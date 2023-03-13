@@ -10,7 +10,7 @@ import SwiftUI
 struct Page1MiddleView: View {
     @State var inputText: String
     var categoryModel: [CategoryModel]
-    var latestModel: [LatestModel]
+    var latestModel: [ItemModel]
     var body: some View {
         GeometryReader { geo in
             VStack(alignment: .center) {
@@ -21,7 +21,7 @@ struct Page1MiddleView: View {
                     .padding(.bottom, geo.size.height / 30)
                 ScrollsTitleView(scrollName: "Latest")
                     .padding(.bottom, 0)
-                LatestScrollView(latestModel: latestModel)
+                MainScrollView(model: latestModel)
                     .frame(height: geo.size.height / 5.5)
             }
         }
@@ -38,10 +38,10 @@ struct Page1MiddleView_Previews: PreviewProvider {
             CategoryModel(image: .bed, name: "Phurniture"),
             CategoryModel(image: .robot, name: "Kids")
         ], latestModel: [
-            LatestModel(image: .img, category: .phone, name: "Samsung S10", price: 123091),
-            LatestModel(image: .img, category: .headphones, name: "Iphone Pro Max 512 Gb", price: 2000000),
-            LatestModel(image: .img, category: .phone, name: "Samsung S10", price: 180000),
-            LatestModel(image: .img, category: .phone, name: "Samsung S10", price: 190000)
+            ItemModel(image: .img, category: .phone, name: "Samsung S10", price: 123091),
+            ItemModel(image: .img, category: .headphones, name: "Iphone Pro Max 512 Gb", price: 2000000),
+            ItemModel(image: .img, category: .phone, name: "Samsung S10", price: 180000),
+            ItemModel(image: .img, category: .phone, name: "Samsung S10", price: 190000)
         ]
         )
     }

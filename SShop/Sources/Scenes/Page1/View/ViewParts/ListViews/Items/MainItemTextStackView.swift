@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct LatestItemTextStackView: View {
+struct MainItemTextStackView: View {
     let category: String
     let nameOfItem: String
     let price: String
@@ -44,8 +44,8 @@ struct LatestItemTextStackView: View {
     }
 }
 
-struct LatestItemTextStackView_Previews: PreviewProvider {
+struct MainItemTextStackView_Previews: PreviewProvider {
     static var previews: some View {
-        LatestItemTextStackView(category: "Phone", nameOfItem: "Samsung S10", price: "$ 180,000")
+        MainItemTextStackView(category: "Phone", nameOfItem: "Samsung S10", price: "$ 180,000")
     }
 }

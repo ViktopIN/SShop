@@ -12,7 +12,7 @@ enum Category: String {
     case headphones = "Headphones"
 }
 
-struct LatestModel: Hashable {
+struct ItemModel: Hashable {
     let image: Image
     let category: Category
     let name: String
