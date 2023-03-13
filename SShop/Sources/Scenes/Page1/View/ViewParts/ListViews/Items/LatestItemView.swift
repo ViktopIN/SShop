@@ -9,7 +9,10 @@ import SwiftUI
 
 struct LatestItemView: View {
     let mainImage: Image
-    let category: String
+    let category: Category
+    var _category: String {
+        category.rawValue
+    }
     let nameOfItem: String
     let price: Int
     var _price: String {
@@ -20,10 +23,10 @@ struct LatestItemView: View {
             ZStack(alignment: .bottomLeading) {
                 mainImage
                     .resizable()
-                    .scaledToFit()
-                .clipShape(RoundedRectangle(cornerRadius: 25))
+                    .clipShape(RoundedRectangle(cornerRadius: 20))
+                    .frame(width: geo.size.width, height: geo.size.height)
                 LatestItemTextStackView(
-                    category: category,
+                    category: _category,
                     nameOfItem: nameOfItem,
                     price: _price
                 )
@@ -35,6 +38,6 @@ struct LatestItemView: View {
 
 struct LatestItemView_Previews: PreviewProvider {
     static var previews: some View {
-        LatestItemView(mainImage: Image.img, category: "Phones", nameOfItem: "Samsung S10", price: 180000)
+        LatestItemView(mainImage: Image.img, category: .phone, nameOfItem: "Samsung S10", price: 180000)
     }
 }

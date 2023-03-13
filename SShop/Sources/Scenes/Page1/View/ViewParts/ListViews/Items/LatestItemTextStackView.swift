@@ -46,6 +46,6 @@ struct LatestItemTextStackView: View {
 
 struct LatestItemTextStackView_Previews: PreviewProvider {
     static var previews: some View {
-        LatestItemTextStackView(category: "Phones", nameOfItem: "Samsung S10", price: "$ 180,000")
+        LatestItemTextStackView(category: "Phone", nameOfItem: "Samsung S10", price: "$ 180,000")
     }
 }

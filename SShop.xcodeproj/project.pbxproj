@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		849F9D5E29BF201300B56161 /* CategoryScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849F9D5D29BF201300B56161 /* CategoryScrollView.swift */; };
 		849F9D6129BF211100B56161 /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849F9D6029BF211100B56161 /* CategoryModel.swift */; };
+		849F9D6329BF28BE00B56161 /* LatestScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849F9D6229BF28BE00B56161 /* LatestScrollView.swift */; };
+		849F9D6529BF28EF00B56161 /* LatestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849F9D6429BF28EF00B56161 /* LatestModel.swift */; };
 		84C7D75C29BB5CBA00707B28 /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84C7D74A29BB5CBA00707B28 /* Montserrat-Light.ttf */; };
 		84C7D75D29BB5CBA00707B28 /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84C7D74B29BB5CBA00707B28 /* Montserrat-SemiBold.ttf */; };
 		84C7D75E29BB5CBA00707B28 /* Montserrat-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84C7D74C29BB5CBA00707B28 /* Montserrat-Thin.ttf */; };
@@ -57,6 +59,8 @@
 /* Begin PBXFileReference section */
 		849F9D5D29BF201300B56161 /* CategoryScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryScrollView.swift; sourceTree = "<group>"; };
 		849F9D6029BF211100B56161 /* CategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
+		849F9D6229BF28BE00B56161 /* LatestScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatestScrollView.swift; sourceTree = "<group>"; };
+		849F9D6429BF28EF00B56161 /* LatestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatestModel.swift; sourceTree = "<group>"; };
 		84C7D74A29BB5CBA00707B28 /* Montserrat-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.ttf"; sourceTree = "<group>"; };
 		84C7D74B29BB5CBA00707B28 /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
 		84C7D74C29BB5CBA00707B28 /* Montserrat-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Thin.ttf"; sourceTree = "<group>"; };
@@ -129,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				849F9D6029BF211100B56161 /* CategoryModel.swift */,
+				849F9D6429BF28EF00B56161 /* LatestModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -328,6 +333,7 @@
 			children = (
 				849F9D5C29BF1FE000B56161 /* Items */,
 				849F9D5D29BF201300B56161 /* CategoryScrollView.swift */,
+				849F9D6229BF28BE00B56161 /* LatestScrollView.swift */,
 			);
 			path = ListViews;
 			sourceTree = "<group>";
@@ -456,6 +462,7 @@
 				84C7D7AF29BE34DB00707B28 /* Page1TitleText.swift in Sources */,
 				84C7D7B529BE459500707B28 /* SearchTextFieldView.swift in Sources */,
 				84C7D7BC29BE54C400707B28 /* Int+Extension.swift in Sources */,
+				849F9D6329BF28BE00B56161 /* LatestScrollView.swift in Sources */,
 				84C7D77029BB634500707B28 /* MainTextField.swift in Sources */,
 				84C7D79529BCED7C00707B28 /* LogInTextFieldStack.swift in Sources */,
 				849F9D5E29BF201300B56161 /* CategoryScrollView.swift in Sources */,
@@ -468,6 +475,7 @@
 				84C7D78B29BB812300707B28 /* SingInServiceStack.swift in Sources */,
 				84C7D7A029BCF2A300707B28 /* LogInView.swift in Sources */,
 				84C7D7A229BDEB3600707B28 /* TabBarButton.swift in Sources */,
+				849F9D6529BF28EF00B56161 /* LatestModel.swift in Sources */,
 				849F9D6129BF211100B56161 /* CategoryModel.swift in Sources */,
 				84C7D7A529BDEE2100707B28 /* TabBarView.swift in Sources */,
 				84C7D7B829BE494000707B28 /* CategoryItemView.swift in Sources */,
