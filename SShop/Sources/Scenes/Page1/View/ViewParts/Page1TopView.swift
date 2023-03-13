@@ -10,23 +10,27 @@ import SwiftUI
 struct Page1TopView: View {
     let profileImage: Image
     var body: some View {
-        GeometryReader { geometry in
-            VStack(alignment: .trailing) {
-                HStack(spacing: geometry.size.width / 7) {
-                    Image.sideMenu
+        HStack {
+            Image.sideMenu
+                .resizable()
+                .scaledToFit()
+            Spacer()
+            Page1TitleText(titleText: "Trade by bata")
+            Spacer()
+            ZStack {
+                PhotoCircleView(profileImage: profileImage, strokeColor: .darkGray1)
+                HStack {
+                    Text("Location")
+                        .font(.montserratRegular(ofSize: 8))
+                    Image(systemName: "chevron.down")
                         .resizable()
                         .scaledToFit()
-                    Page1TitleText(titleText: "Trade by bata")
-                    PhotoCircleView(profileImage: profileImage, strokeColor: .darkGray1)
+                        .frame(width: 6)
                 }
-                HStack {
-                    Image(systemName: "chevron.down")
-                    Text("Location")
-                }
+                .offset(y: 35)
             }
-            .padding(.leading, geometry.size.width / 25)
-            .padding(.trailing, geometry.size.width / 8)
         }
+        .frame(height: 31)
     }
 }
 
@@ -35,3 +39,4 @@ struct Page1TopView_Previews: PreviewProvider {
         Page1TopView(profileImage: .ppl)
     }
 }
+//    .frame(width: geometry.size.width, height: geometry.size.height)
