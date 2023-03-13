@@ -17,6 +17,7 @@ struct ScrollsTitleView: View {
             Text("View all")
                 .font(.montserratMedium(ofSize: 8))
                 .foregroundColor(.lightGray2)
+                .padding(.trailing, 12)
         }
     }
 }

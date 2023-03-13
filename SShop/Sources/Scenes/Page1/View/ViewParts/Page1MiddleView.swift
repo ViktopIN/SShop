@@ -16,6 +16,7 @@ struct Page1MiddleView: View {
             VStack(alignment: .center) {
                 SearchTextFieldView(inputText: $inputText)
                     .padding(.bottom, geo.size.height / 40)
+                    .padding(.horizontal, geo.size.width / 6.6)
                 CategoryScrollView(categoryModel: categoryModel)
                     .padding(.bottom, geo.size.height / 30)
                 ScrollsTitleView(scrollName: "Latest")

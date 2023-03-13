@@ -13,13 +13,18 @@ struct Page1BottomView: View {
     var body: some View {
         GeometryReader { geo in
             VStack {
+                Spacer()
+                    .frame(height: geo.size.height / 12)
                 ScrollsTitleView(scrollName: "Flash Sale")
                 MainScrollView(model: flashSaleModel, shortSpacing: true)
-                    .frame(height: geo.size.height / 3)
+                    .frame(height: geo.size.height / 2.06)
+                Spacer()
+                    .frame(height: geo.size.height / 12)
                 ScrollsTitleView(scrollName: "Brands")
                 MainScrollView(model: flashSaleModel, shortSpacing: true)
-                    .frame(height: geo.size.height / 4.6)
+                    .frame(height: geo.size.height / 3.06)
             }
+            .frame(width: geo.size.width, height: geo.size.height)
         }
     }
 }

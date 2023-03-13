@@ -25,13 +25,20 @@ struct Page1View: View {
     ]
     var body: some View {
         GeometryReader { geo in
-            VStack {
-                Page1TopView(profileImage: .ppl)
-                    .padding(.bottom, geo.size.height / 27)
-                Page1MiddleView(inputText: "", categoryModel: category, latestModel: items)
-                Page1BottomView(flashSaleModel: items, brandsModel: items)
+            ScrollView(.vertical, showsIndicators: false){
+                LazyVStack {
+                    Page1TopView(profileImage: .ppl)
+                        .frame(height: geo.size.height / 27)
+                        .padding(.bottom, geo.size.height / 27)
+                        .padding(.trailing, geo.size.width / 9.3)
+                    Page1MiddleView(inputText: "", categoryModel: category, latestModel: items)
+                        .frame(height: geo.size.height / 2.4)
+                    Page1BottomView(flashSaleModel: items, brandsModel: items)
+                        .frame(height: geo.size.height / 1.5)
+                }
             }
         }
+        .padding(.leading, 11)
     }
 }
 
